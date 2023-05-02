@@ -68,14 +68,31 @@ public class Main {
         numbers[0] = 1;
         numbers[1] = 2;
         numbers[2] = 3;
-
-        System.out.println(numbers[2] + ", " + numbers[1] + ", " + numbers[0]);
+        for (int i = numbers.length - 1; i >= 0; i--) {
+            System.out.print(numbers[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
 
         double[] fractions = new double[]{1.57, 7.654, 9.986};
-        System.out.println(fractions[2] + ", " + fractions[1] + ", " + fractions[0]);
+        for (int i = fractions.length - 1; i >= 0; i--) {
+            System.out.print(fractions[i]);
+            if (i >0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
 
         int[] dayOfWeeks = {3, 5, 7};
-        System.out.println(dayOfWeeks [2] + ", " + dayOfWeeks[1] + ", " + dayOfWeeks[0]);
+        for (int i = dayOfWeeks.length - 1; i >= 0; i--) {
+            System.out.print(dayOfWeeks[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
     }
     public static void task4() {
         System.out.println("Задача 4");
